@@ -179,32 +179,32 @@
 
 // # Frequency Count in Js
 
-let arr = [
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-  "mango",
-  "banana",
-  "apple",
-];
+// let arr = [
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+//   "mango",
+//   "banana",
+//   "apple",
+// ];
 
-const ans = arr.reduce((acc, currVal) => {
-  acc[currVal] = (acc[currVal] || 0) + 1;
-  return acc
-}, {});
+// const ans = arr.reduce((acc, currVal) => {
+//   acc[currVal] = (acc[currVal] || 0) + 1;
+//   return acc
+// }, {});
 // console.log(ans);
