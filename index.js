@@ -208,3 +208,206 @@
 //   return acc
 // }, {});
 // console.log(ans);
+
+
+
+
+
+
+// ! Function
+
+// # Sum of two numbers
+
+// function Sum(a,b) {
+//     return a + b
+// }
+
+// console.log("🚀 ~ Sum:", Sum(5,3));
+
+
+// # Even or Odd
+
+// function Odd_Even(n){
+//     if(n % 2 === 0){
+//         return "Even"
+//     }
+//     return "Odd"
+// }
+
+// console.log(Odd_Even(7))
+
+
+// # Largest of three numbers
+
+// function largest(a,b,c) {
+//     if(a>b && a >c) return a
+//     if(b>a && b>c) return b
+//     return c;
+// }
+
+// console.log(largest(5,6,2))
+
+// function largest(a, b, c) {
+//     return Math.max(a, b, c);
+// }
+    
+// console.log(largest(5,6,2))
+
+// # Reverse String
+
+// function reverse(str) {
+//     return str.split("").reverse().join("");
+// }
+
+// console.log(reverse("Rahmat"))
+
+// function reverse(str) {
+//     let rev = ""
+//     for(let i = str.length-1; i>= 0; i--){
+//         rev += str[i]
+//     }
+//     return rev
+// }
+// console.log(reverse("Rahmat"))
+
+
+// # Factorial
+
+// function factorial(n) {
+//     let fact = 1
+//     for (let i  = 1; i <= n; i++){
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+
+// console.log(factorial(5))
+
+
+// # Count Vowels
+
+// function countVowels(str) {
+//     let count = 0;
+//     for(let chr of str){
+//         if(chr === "a" || chr === "e" || chr === "i" || chr === "o" || chr === "u"){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log(countVowels("abcde"))
+
+// function countVowels(str) {
+//     let count = 0;
+//     let vowel = "aeiou"
+//     for(let chr of str){
+//         if(vowel.includes(str[i])){
+//             count++;
+//         }
+//     }
+//     return count
+// }
+
+// console.log(countVowels("abcde"))
+
+
+// function countVowels(str) {
+//     let count = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u"){
+//             count++
+//         }
+//     }
+//     return count
+// }
+
+// console.log(countVowels("abcde"))
+
+
+// function countVowels(str) {
+//     let count = 0;
+//     let vowel = "aeiou"
+//     for(let i = 0; i < str.length; i++){
+//         if(vowel.includes(str[i])){
+//             count++;
+//         }
+//     }
+//     return count
+// }
+
+// console.log(countVowels("abcde"))
+
+
+// # Palindrome
+
+// function palindrom(str) {
+//     let reverse = str.split("").reverse().join("");
+//     return str === reverse ? "Palindrome" : "Not Palindrome"
+// }
+// console.log(palindrom("121"))
+
+
+// function palindrom(str) {
+//     let rev = ""
+//     for(let i = str.length-1; i>=0; i--){
+//         rev = rev + str[i]
+//     }
+//     return str === rev ? "Palindrome" : "Not Palindrome"
+// }
+
+// console.log(palindrom('abcba'))
+
+
+
+// # Array sum
+
+// function arrSum(arr) {
+//     let sum = 0;
+//     for(let i = 0; i<arr.length; i++){
+//         sum = sum + arr[i]
+//     }
+//     return sum
+// }
+
+// console.log(arrSum([1,2,3,4,5]))
+
+
+// # Second largest (Without sort)
+
+// function secondLargest(arr) {
+//     let max = -Infinity;
+//     let secondMax = -Infinity
+
+//     for(let el of arr){
+//         if(el > max){
+//             secondMax = max;
+//             max = el
+//         }
+//         else if(el > secondMax && el !== max){
+//             secondMax = el
+//         }
+//     }
+//     return secondMax
+// }
+
+// console.log(secondLargest([5,7,6,1,3,4]))
+
+
+// # Fibonacci Using Function
+//# Return nth Fibonacci number.
+
+function fibonacci(n) {
+    if(n <= 1) return n;
+
+    let a = 0
+    let b = 1
+    let next;
+    for(let i = 2; i <= n; i++){
+        next = a + b;
+        a = b
+        b = next
+    }
+    return b
+}
+
+console.log(fibonacci(1));
