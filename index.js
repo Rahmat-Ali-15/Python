@@ -175,8 +175,6 @@
 //     bill = (100 * 5) + (100 * 8) + (units - 200) * 10
 // }
 
-
-
 // # Frequency Count in Js
 
 // let arr = [
@@ -209,11 +207,6 @@
 // }, {});
 // console.log(ans);
 
-
-
-
-
-
 // ! Function
 
 // # Sum of two numbers
@@ -222,8 +215,7 @@
 //     return a + b
 // }
 
-// console.log("🚀 ~ Sum:", Sum(5,3));
-
+// console.log("🚀 ~ Sum:", Sum(5,3)); // Output -> 8
 
 // # Even or Odd
 
@@ -235,7 +227,6 @@
 // }
 
 // console.log(Odd_Even(7))
-
 
 // # Largest of three numbers
 
@@ -250,13 +241,13 @@
 // function largest(a, b, c) {
 //     return Math.max(a, b, c);
 // }
-    
+
 // console.log(largest(5,6,2))
 
 // # Reverse String
 
 // function reverse(str) {
-//     return str.split("").reverse().join("");
+//     return str.split("").reverse().join(""); // "tamhaR"
 // }
 
 // console.log(reverse("Rahmat"))
@@ -270,7 +261,6 @@
 // }
 // console.log(reverse("Rahmat"))
 
-
 // # Factorial
 
 // function factorial(n) {
@@ -282,7 +272,6 @@
 // }
 
 // console.log(factorial(5))
-
 
 // # Count Vowels
 
@@ -310,7 +299,6 @@
 
 // console.log(countVowels("abcde"))
 
-
 // function countVowels(str) {
 //     let count = 0;
 //     for(let i = 0; i < str.length; i++){
@@ -322,7 +310,6 @@
 // }
 
 // console.log(countVowels("abcde"))
-
 
 // function countVowels(str) {
 //     let count = 0;
@@ -337,7 +324,6 @@
 
 // console.log(countVowels("abcde"))
 
-
 // # Palindrome
 
 // function palindrom(str) {
@@ -345,7 +331,6 @@
 //     return str === reverse ? "Palindrome" : "Not Palindrome"
 // }
 // console.log(palindrom("121"))
-
 
 // function palindrom(str) {
 //     let rev = ""
@@ -356,8 +341,6 @@
 // }
 
 // console.log(palindrom('abcba'))
-
-
 
 // # Array sum
 
@@ -371,6 +354,19 @@
 
 // console.log(arrSum([1,2,3,4,5]))
 
+// # Write a function to return the largest number in an array.
+
+// function largest(arr) {
+//   let max = -Infinity;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+
+// console.log(largest([5, 6, 2, 7, 9]));
 
 // # Second largest (Without sort)
 
@@ -393,21 +389,108 @@
 // console.log(secondLargest([5,7,6,1,3,4]))
 
 
+// # Write a function to return the smallest number in an array.
+
+// function smallest(arr) {
+//     let small = Infinity;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] < small){
+//             small = arr[i];
+//             console.log("🚀 ~ small:", small);
+//         }
+//     }
+//     return small;
+// }
+
+// console.log(smallest([5,2,7,1,8]))
+
+
+// function removeDuplicates(arr) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!result.includes(arr[i])) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+
+
+
+
 // # Fibonacci Using Function
 //# Return nth Fibonacci number.
 
-function fibonacci(n) {
-    if(n <= 1) return n;
+// function fibonacci(n) {
+//     if(n <= 1) return n;
 
-    let a = 0
-    let b = 1
-    let next;
-    for(let i = 2; i <= n; i++){
-        next = a + b;
-        a = b
-        b = next
-    }
-    return b
-}
+//     let a = 0
+//     let b = 1
+//     let next;
+//     for(let i = 2; i <= n; i++){
+//         next = a + b;
+//         a = b
+//         b = next
+//     }
+//     return b
+// }
 
-console.log(fibonacci(1));
+// console.log(fibonacci(1));
+
+// let num = 50
+
+// console.log(num % 2)
+
+// let num = 21;
+
+// if(num % 2 === 0){
+//     console.log("Even")
+// }
+// else{
+//     console.log("Odd")
+// }
+
+// function largest(a,b,c) {
+//     if (a === b && a > c){
+//         return "a & b are equal and greater than c"
+//     }
+//     else if (a === c && a > b){
+//         return "a & c are equal and greater than b"
+//     }
+//     else if (b === c && b > a){
+//         return "b & c are equal and greater than a"
+//     }
+//     else if (a === b && b === c){
+//         return "a, b & c all are equal"
+//     }
+//     else if(a > b && a > c){
+//         return a
+//     }
+//     else if (b > a && b > c){
+//         return b
+//     }
+//     else{
+//         return c
+//     }
+// }
+
+// console.log(largest(5,5,5))
+
+// # Write a function to check if a number is prime.
+
+// function isPrime(n) {
+//     if(n < 2) return "Invalid Number";
+
+//     for(let i = 2; i < n; i++){
+//         if(n % i === 0){
+//             return "Not Prime";
+//         }
+//     }
+//     return "Prime"
+// }
+
+// console.log(isPrime(78))
