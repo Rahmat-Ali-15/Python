@@ -494,3 +494,34 @@
 // }
 
 // console.log(isPrime(78))
+
+
+
+// # Write a function to capitalize first letter of each word.
+
+// function capitalize(str) {
+//     let word = str.split(" ");
+//     for (let i = 0; i < word.length; i++){
+//         word[i] = word[i][0].toUpperCase() + word[i].slice(1)
+//     }
+//     return word.join(" ")
+// }
+
+// console.log(capitalize("rahmat ali"))
+
+
+// function capitalize(str) {
+//     let result = "";
+
+//     for (let i = 0; i < str.length; i++){
+//         if(i === 0 || str[i-1] === " "){
+//             result += str[i].toUpperCase();
+//         }
+//         else{
+//             result += str[i]
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(capitalize("rahmat ali"))
